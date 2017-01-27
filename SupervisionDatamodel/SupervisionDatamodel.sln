@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupervisionDatamodel.Business.Core", "SupervisionDatamodel.Business.Core\SupervisionDatamodel.Business.Core.csproj", "{F6449EF6-32EF-4E7B-A7C4-CB6A485260AE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupervisionDatamodel.Client.WPF", "SupervisionDatamodel.Client.WPF\SupervisionDatamodel.Client.WPF.csproj", "{640B6E4F-31D8-4F45-993A-80FA5749D071}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F6449EF6-32EF-4E7B-A7C4-CB6A485260AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6449EF6-32EF-4E7B-A7C4-CB6A485260AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6449EF6-32EF-4E7B-A7C4-CB6A485260AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{640B6E4F-31D8-4F45-993A-80FA5749D071}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{640B6E4F-31D8-4F45-993A-80FA5749D071}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{640B6E4F-31D8-4F45-993A-80FA5749D071}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{640B6E4F-31D8-4F45-993A-80FA5749D071}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

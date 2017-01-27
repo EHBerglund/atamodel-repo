@@ -1,0 +1,53 @@
+﻿<Window x:Class="SupervisionDatamodel.Client.WPF.Template"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SupervisionDatamodel.Client.WPF"
+        mc:Ignorable="d"
+        Title="Template" Height="300" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Grid.Column="0">SavePaths</Label>
+        <Grid Grid.Row="0" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Button Grid.Row="0" Grid.Column="0" x:Name="btnToggleSelectAllSheets" Click="OnClick_btnToggleSelectAllSheets" Content="." Height="20" Width="10"></Button>
+            <Label Grid.Row="0" Grid.Column="1">SheetPaths</Label>
+            <Button Grid.Row="0" Grid.Column="2" x:Name="btnSheetDirectoryButton" Click="OnClick_btnSheetDirectoryPicker" Content="..." Height="20" Width="40"/>
+            <Label Grid.Row="0" Grid.Column="3" x:Name="lblSheetDirectory"></Label>
+        </Grid>
+        <ListBox ItemsSource="{Binding SavePaths}" Grid.Row="1" Grid.Column="0">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <CheckBox IsChecked="{Binding IsChecked}" Content="{Binding Path=Item.Name}"  />
+                    <!-- Trenger ikke tenke på bindinggreiene-->
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <ListBox ItemsSource="{Binding SheetPaths}" Grid.Row="1" Grid.Column="1">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <CheckBox IsChecked="{Binding IsChecked}" Content="{Binding Path=Item.Name}" />
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Button Grid.Row="2" Grid.Column="0" Height="20px" Width="40px" Margin="10" Name="btnBuild" Click="OnClick_btnBuild">Build</Button>
+        <Label x:Name="lblStatus" Grid.Row="2" Grid.Column="1"></Label>
+    </Grid>
+</Window>

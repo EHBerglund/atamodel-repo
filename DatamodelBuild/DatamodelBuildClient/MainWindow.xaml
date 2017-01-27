@@ -35,7 +35,7 @@
             <ListBox ItemsSource="{Binding SavePaths}" Grid.Row="1" Grid.Column="0">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
-                        <CheckBox IsChecked="{Binding IsChecked}" Content="{Binding Path=Item.Name}"  />
+                        <CheckBox IsChecked="{Binding IsChecked}" Content="{Binding Path=Item.Name}"  /> <!-- Trenger ikke tenke på bindinggreiene-->
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
