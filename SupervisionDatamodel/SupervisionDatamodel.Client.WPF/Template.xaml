@@ -29,25 +29,25 @@
             </Grid.RowDefinitions>
             <Button Grid.Row="0" Grid.Column="0" x:Name="btnToggleSelectAllSheets" Click="OnClick_btnToggleSelectAllSheets" Content="." Height="20" Width="10"></Button>
             <Label Grid.Row="0" Grid.Column="1">SheetPaths</Label>
-            <Button Grid.Row="0" Grid.Column="2" x:Name="btnSheetDirectoryButton" Click="OnClick_btnSheetDirectoryPicker" Content="..." Height="20" Width="40"/>
+            <Button Grid.Row="0" Grid.Column="2" x:Name="btnSheetDirectoryButton" Content="..." Height="20" Width="40"/>
             <Label Grid.Row="0" Grid.Column="3" x:Name="lblSheetDirectory"></Label>
         </Grid>
         <ListBox ItemsSource="{Binding SavePaths}" Grid.Row="1" Grid.Column="0">
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <CheckBox IsChecked="{Binding IsChecked}" Content="{Binding Path=Item.Name}"  />
+                    <CheckBox  />
                     <!-- Trenger ikke tenke på bindinggreiene-->
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-        <ListBox ItemsSource="{Binding SheetPaths}" Grid.Row="1" Grid.Column="1">
+        <ListBox Grid.Row="1" Grid.Column="1">
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <CheckBox IsChecked="{Binding IsChecked}" Content="{Binding Path=Item.Name}" />
+                    <CheckBox  />
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-        <Button Grid.Row="2" Grid.Column="0" Height="20px" Width="40px" Margin="10" Name="btnBuild" Click="OnClick_btnBuild">Build</Button>
+        <Button Grid.Row="2" Grid.Column="0" Height="20px" Width="40px" Margin="10" Name="btnBuild">Build</Button>
         <Label x:Name="lblStatus" Grid.Row="2" Grid.Column="1"></Label>
     </Grid>
 </Window>

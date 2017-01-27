@@ -1,4 +1,5 @@
-﻿<Window x:Class="SupervisionDatamodel.Client.WPF.MainWindow"
+﻿<!--Design av siden-->
+    <Window x:Class="SupervisionDatamodel.Client.WPF.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -7,6 +8,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Button Grid.Row="0" Grid.Column="0" x:Name="btnBUTTON" Click="btnBUTTON_Click" Content="Klikk meg" Height="20" Width="60"></Button>
     </Grid>
 </Window>

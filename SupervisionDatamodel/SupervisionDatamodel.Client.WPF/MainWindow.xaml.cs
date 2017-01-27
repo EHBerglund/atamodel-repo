@@ -1,4 +1,5 @@
-﻿using System;
+﻿//Ikke design. Hva som skjer når man trykker på saker og ting.
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,11 @@ namespace SupervisionDatamodel.Client.WPF
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void btnBUTTON_Click(object sender, EventArgs e)
+        {
+        
         }
     }
 }
