@@ -1,5 +1,5 @@
 ﻿<!--Design av siden-->
-    <Window x:Class="SupervisionDatamodel.Client.WPF.MainWindow"
+<Window x:Class="SupervisionDatamodel.Client.WPF.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -8,6 +8,18 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Button Grid.Row="0" Grid.Column="0" x:Name="btnBUTTON" Click="btnBUTTON_Click" Content="Klikk meg" Height="20" Width="60"></Button>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" MinWidth="88"></ColumnDefinition>
+            <ColumnDefinition Width="Auto" MinWidth="124"></ColumnDefinition>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Grid.Column="0">Mappings</Label>
+        <Label Grid.Row="0" Grid.Column="1">Escali calculations</Label>
+        <Label Grid.Row="0" Grid.Column="2">EIOPA calculations</Label>
     </Grid>
 </Window>
