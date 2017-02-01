@@ -24,9 +24,5 @@ namespace SupervisionDatamodel.Client.WPF
             InitializeComponent();
         }
 
-        public void OnClick_btnToggleSelectAllSheets(object sender, EventArgs e)
-        {
-            // TODO
-        }
     }
 }
