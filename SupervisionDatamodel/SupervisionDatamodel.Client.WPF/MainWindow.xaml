@@ -13,7 +13,11 @@
                 <TabControl TabStripPlacement="Bottom">
                     <TabItem Header="Stresstest - Katastrofe (Skade)">
                         <DataGrid Height="Auto" Width="980" Name="StresstestKatastrofe" HorizontalAlignment="Left">
-                            
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="RiskType"></DataGridTextColumn>
+                                <DataGridTextColumn Header="Country"></DataGridTextColumn>
+                            </DataGrid.Columns>
+                            <Button Content="Add new row" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
                         </DataGrid>
                     </TabItem>
                     <TabItem Header="Stresstest (Total)"></TabItem>
