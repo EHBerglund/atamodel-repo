@@ -32,7 +32,7 @@
             <Button Grid.Row="0" Grid.Column="2" x:Name="btnSheetDirectoryButton" Content="..." Height="20" Width="40"/>
             <Label Grid.Row="0" Grid.Column="3" x:Name="lblSheetDirectory"></Label>
         </Grid>
-        <ListBox ItemsSource="{Binding SavePaths}" Grid.Row="1" Grid.Column="0">
+        <ListBox ItemsSource="{BinPaths}" Grid.Row="1" Grid.Column="0">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <CheckBox  />

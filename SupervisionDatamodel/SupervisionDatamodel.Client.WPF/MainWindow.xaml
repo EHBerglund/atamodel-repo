@@ -6,20 +6,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SupervisionDatamodel.Client.WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Datamodel   " Height="400" Width="1000">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition Height="Auto"></RowDefinition>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto" MinWidth="88"></ColumnDefinition>
-            <ColumnDefinition Width="Auto" MinWidth="124"></ColumnDefinition>
-            <ColumnDefinition />
-        </Grid.ColumnDefinitions>
-        <Label Grid.Row="0" Grid.Column="0">Mappings</Label>
-        <Label Grid.Row="0" Grid.Column="1">Escali calculations</Label>
-        <Label Grid.Row="0" Grid.Column="2">EIOPA calculations</Label>
+        <TabControl>
+            <TabItem Header="Mappings">
+                <TabControl TabStripPlacement="Bottom">
+                    <TabItem Header="Stresstest - Katastrofe (Skade)">
+                        <DataGrid Height="Auto" Width="980" Name="StresstestKatastrofe" HorizontalAlignment="Left">
+                            
+                        </DataGrid>
+                    </TabItem>
+                    <TabItem Header="Stresstest (Total)"></TabItem>
+                    <TabItem Header="Selskapsdata"></TabItem>
+                    <TabItem Header="Regnskap mapping"></TabItem>
+                    <TabItem Header="Reassuranse (treaty)"></TabItem>
+                    <TabItem Header="Reassuranse (main)"></TabItem>
+                    <TabItem Header="Reassuranse (broker)"></TabItem>
+                    <TabItem Header="Off-balance"></TabItem>
+                    <TabItem Header="Movements"></TabItem>
+                    <TabItem Header="Motpartsrisiko"></TabItem>
+                    <TabItem Header="Investeringer"></TabItem>
+                    <TabItem Header="Fund lookthrough"></TabItem>
+                    <TabItem Header="Forsikringsaktiviteter"></TabItem>
+                    <TabItem Header="Derivater"></TabItem>
+                    <TabItem Header="Claims"></TabItem>
+                    <TabItem Header="Cashflows"></TabItem>
+                    <TabItem Header="Avsetninger"></TabItem>
+                </TabControl>
+             </TabItem>
+             <TabItem Header="Escali calculations">
+                 <Label Content="Calculations from the Beregninger sheet"/>
+             </TabItem>
+             <TabItem Header="EIOPA calculations">
+                 <Label Content="Calculations from the EIOPA validation file"/>
+             </TabItem>
+         </TabControl>
     </Grid>
 </Window>
